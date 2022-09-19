@@ -8,17 +8,14 @@ Repositorio para prueba técnica de Afex frontend
 npm i
 ```
 
-2. Copiar archivo /environments/.env.development a la raíz del proyecto y renombrarlo a .env
-```
-cp ./environments/.env.development .env
-```
-
-3. Iniciar la aplicación:
+2. Iniciar la aplicación:
 ```
 npm run dev
 ```
 
 La aplicación corre en [http://localhost:3000](http://localhost:3000).
+
+Es posible cambiar la URL de la API en la aplicación desde el archivo ./src/config/api.config.ts.
 
 
 

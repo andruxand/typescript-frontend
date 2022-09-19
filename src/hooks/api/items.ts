@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
 import { ApiResponse } from '../../interfaces/api';
+import { apiHost } from '../../config/api.config';
 
 export const useGetItems = (url: string, params?: string): ApiResponse => {
   const [status, setStatus] = useState<number>(0);
@@ -8,8 +9,6 @@ export const useGetItems = (url: string, params?: string): ApiResponse => {
   const [data, setData] = useState<unknown>();
   const [error, setError] = useState<unknown>();
   const [loading, setLoading] = useState<boolean>(false);
-  const apiHost: string =
-    import.meta.env.VITE_API_HOST ?? 'http://localhost:4000';
 
   useEffect(() => {
     const getAPIData = async () => {
