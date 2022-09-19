@@ -8,7 +8,8 @@ export const useGetItems = (url: string, params?: string): ApiResponse => {
   const [data, setData] = useState<unknown>();
   const [error, setError] = useState<unknown>();
   const [loading, setLoading] = useState<boolean>(false);
-  const apiHost: string = process.env.VITE_API_HOST ?? 'http://localhost:4000';
+  const apiHost: string =
+    import.meta.env.VITE_API_HOST ?? 'http://localhost:4000';
 
   useEffect(() => {
     const getAPIData = async () => {
