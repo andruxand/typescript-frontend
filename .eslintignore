@@ -1,0 +1,6 @@
+node_modules
+public/sw.js
+src/__test__
+*config.js
+*.d.ts
+jest*

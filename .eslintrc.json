@@ -1,0 +1,145 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "plugin:import/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "project": "./tsconfig.json",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "@typescript-eslint",
+    "import",
+    "simple-import-sort" 
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    },
+    "react": {
+      "pragma": "React",
+      "fragment": "Fragment",
+      "version": "detect",
+      "flowVersion": "0.53"
+    },
+    "propWrapperFunctions": [
+        "forbidExtraProps",
+        {"property": "freeze", "object": "Object"},
+        {"property": "myFavoriteWrapper"},
+        {"property": "forbidExtraProps", "exact": true}
+    ],
+    "componentWrapperFunctions": [
+        "observer",
+        {"property": "styled"},
+        {"property": "observer", "object": "Mobx"},
+        {"property": "observer", "object": "<pragma>"}
+    ],
+    "formComponents": [
+      "CustomForm",
+      {"name": "Form", "formAttribute": "endpoint"}
+    ],
+    "linkComponents": [
+      "Hyperlink",
+      {"name": "Link", "linkAttribute": "to"}
+    ]
+  },
+  "rules": {
+    "callback-return": [
+      "error",
+      ["done", "proceed", "next", "onwards", "callback", "cb"]
+     ],
+     "camelcase": [
+      "warn",
+      {
+       "properties": "always"
+      }
+     ],
+     "no-tabs":"off",
+     "comma-style": ["warn", "last"],
+     "curly": ["error"],
+     "eqeqeq": ["error", "always"],
+     "eol-last": ["warn"],
+     "no-undef": 2,
+     "handle-callback-err": ["error"],
+     "arrow-body-style": ["off", 2],
+     "indent": ["off", 2],
+     "linebreak-style": ["error", "unix"],
+     "no-dupe-keys": ["error"],
+     "no-duplicate-case": ["error"],
+     "no-extra-semi": ["warn"],
+     "no-labels": ["error"],
+     "no-mixed-spaces-and-tabs": [2, "smart-tabs"],
+     "no-redeclare": ["warn"],
+     "no-return-assign": ["error", "always"],
+     "no-sequences": ["error"],
+     "no-trailing-spaces": ["warn"],
+     "no-unexpected-multiline": ["warn"],
+     "no-unreachable": ["warn"],
+     "no-magic-numbers": ["off"],
+     "max-params": ["off"],
+     "max-len": ["off"],
+     "max-nested-callbacks": ["off"],
+     "new-cap": ["off"],
+     "consistent-this": ["error", "that"],
+     "no-unused-vars": [
+      "error",
+      {
+       "caughtErrors": "all",
+       "caughtErrorsIgnorePattern": "^unused($|[A-Z].*$)"
+      }
+     ],
+     "no-use-before-define": [
+      "error",
+      {
+       "functions": false
+      }
+     ],
+     "no-var": 2,
+     "one-var": ["warn", "never"],
+     "prefer-arrow-callback": [
+      "warn",
+      {
+       "allowNamedFunctions": true
+      }
+     ],
+     "quotes": [
+      "warn",
+      "single",
+      {
+       "avoidEscape": false,
+       "allowTemplateLiterals": true
+      }
+     ],
+     "semi-spacing": [
+      "warn",
+      {
+       "before": false,
+       "after": true
+      }
+     ],
+     "semi-style": ["warn", "last"],
+     "space-before-function-paren": ["off", 2],
+     "@typescript-eslint/strict-boolean-expressions": "off",
+     "@typescript-eslint/explicit-function-return-type": "off"
+  }
+}
