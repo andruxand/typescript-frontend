@@ -39,9 +39,6 @@ jobs:
 
             - name: Install
               run: npm install
-
-            - name: Copy .env variables
-              run: cp ./environments/.env.development .env
             
             - name: Prettier
               run: npm run prettier
