@@ -40,7 +40,7 @@ npm run prepare
 npm run build
 ```
 
-Generará la carpeta build/ con los archivos compilados de la aplicación. La aplicación corre en [http://localhost:3000](http://localhost:3001).
+Generará la carpeta build/ con los archivos compilados de la aplicación. La aplicación corre en [http://localhost:3001](http://localhost:3001).
 
 
 
