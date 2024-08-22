@@ -1,4 +1,4 @@
-# Aplicación Frontend AFEX
+# Aplicación Frontend (React TypeScript + Tailwind)
 Repositorio para prueba técnica de Afex frontend
 
 
