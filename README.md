@@ -1,5 +1,5 @@
 # Aplicación Frontend (React TypeScript + Tailwind)
-Repositorio para prueba técnica de Afex frontend
+Repositorio frontend typescript
 
 
 ## Pasos para iniciar
